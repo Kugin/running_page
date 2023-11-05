@@ -36,7 +36,7 @@
   }
 
   &:hover {
-    background-color: lighten(rgb(26, 26, 26), 3%);
+    background-color: lighten($white, 3%);
   }
 }
 
@@ -50,5 +50,5 @@
 }
 
 .runDate {
-  color: rgb(204, 204, 204);
+  color: $dark;
 }
