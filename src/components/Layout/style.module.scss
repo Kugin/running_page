@@ -1,15 +1,15 @@
 @import '../../styles/variables.scss';
 
 .body {
-  background-color: $dark;
-  color: $nike;
+  background-color: $green;
+  color: $dark;
 
   p,
   h1,
   h3,
   h4,
   a {
-    color: $nike;
+    color: $dark;
     text-decoration: none;
   }
 
