@@ -54,7 +54,6 @@ def get_to_download_runs_ids(session, headers, sport_type):
     last_date = 0
     result = []
 
-    runStartTime = 1672502400000
     while 1:
         r = session.get(
             RUN_DATA_API.format(sport_type=sport_type, last_date=last_date),
@@ -65,8 +64,6 @@ def get_to_download_runs_ids(session, headers, sport_type):
 
             for i in run_logs:
                 logs = [j["stats"] for j in i["logs"]]
-                if logs[0]["startTime"] < runStartTime:
-                  continue
                 result.extend(k["id"] for k in logs if not k["isDoubtful"])
             last_date = r.json()["data"]["lastTimestamp"]
             since_time = datetime.utcfromtimestamp(last_date / 1000)
