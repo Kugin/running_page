@@ -11,6 +11,7 @@
   python run_page/get_garmin_secret.py ${email} ${password} --is-cn
 ```
 
+
 <p align="center">
   <img width="150" src="https://raw.githubusercontent.com/shaonianche/gallery/master/running_page/running_page_logo.png" />
 </p>
